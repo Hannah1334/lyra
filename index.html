@@ -1,174 +1,799 @@
-<style>
+<script>resizeTo(screen.availWidth, screen.availHeight);</script> 
 
+<style>
 body{
 background-image: url('https://i.imgur.com/DUuJ92t.png') !important; 
 background-color:#000000;
+overflow:hidden;
 }
 
 ::-webkit-scrollbar {width: 3px; height: 3px;}
 ::-webkit-scrollbar-track {background: none;}
-::-webkit-scrollbar-thumb {background: #666666;}
+::-webkit-scrollbar-thumb {background: #391c25;}
 
-#box1 {
+#line1 {
 position:absolute;
-width:46%;
+background-color:#560B0F;
+width:0.5%;
 height:100%;
-left:27%;
 top:0%;
-background-image: url('https://i.imgur.com/Iwqi7j0.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
+left:48%;
 }
 
-#title1 {
+#line2 {
 position:absolute;
-padding:1%;
-width:37%;
+background-color:#74292D;
+width:0.5%;
+height:100%;
+top:0%;
+left:49%;
+}
+
+#line3 {
+position:absolute;
+background-color:#394B59;
+width:0.5%;
+height:100%;
+top:0%;
+left:50%;
+}
+
+#line4 {
+position:absolute;
+background-color:#1B2D3B;
+width:0.5%;
+height:100%;
+top:0%;
+left:51%;
+}
+
+#pictab1 {
+position:absolute;
+width:3.5%;
 height:7%;
-left:30%;
-top:11%;
+top:21%;
+left:48%;
+background-image: url('https://i.imgur.com/M1U7g2a.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pictab2 {
+position:absolute;
+width:3.5%;
+height:7%;
+top:29%;
+left:48%;
+background-image: url('https://i.imgur.com/XAANmxS.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pictab3 {
+position:absolute;
+width:3.5%;
+height:7%;
+top:37%;
+left:48%;
+background-image: url('https://i.imgur.com/6VyZ9iS.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pictab4 {
+position:absolute;
+width:3.5%;
+height:7%;
+top:45%;
+left:48%;
+background-image: url('https://i.imgur.com/XG2kbZ9.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pictab5 {
+position:absolute;
+width:3.5%;
+height:7%;
+top:53%;
+left:48%;
+background-image: url('https://i.imgur.com/diZsKXW.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pictab6 {
+position:absolute;
+width:3.5%;
+height:7%;
+top:61%;
+left:48%;
+background-image: url('https://i.imgur.com/XFxLDsM.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pictab7 {
+position:absolute;
+width:3.5%;
+height:7%;
+top:69%;
+left:48%;
+background-image: url('https://i.imgur.com/IJmH8Kq.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pictab1:hover,#pictab2:hover,#pictab3:hover,#pictab4:hover,#pictab5:hover,#pictab6:hover,#pictab7:hover {
+background-image: url('https://i.imgur.com/zpznGfv.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+background-color:#14090F;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#topbox {
+position:absolute;
+background-color:#14090F;
+width:50%;
+height:4%;
+top:0%;
+left:25%;
+font-family: 'Teko', sans-serif;
+color:#AFAFAF;
 text-align:center;
-font-size:220%;
-font-family:Pacifico;
-color:#761315;
+font-size:3vh;
+text-transform:uppercase;
+letter-spacing:5px;
+}
+
+#images {
+position:absolute;
+width:21%;
+height:60%;
+top:35%;
+left:25%;
+}
+
+#basicborder1 {
+position:absolute;
+border-left:1px solid #281D23;
+border-top:1px solid #281D23;
+border-bottom:1px solid #281D23;
+width:5%;
+height:29%;
+top:5%;
+left:25%;
+}
+
+#basicborder2 {
+position:absolute;
+border-right:1px solid #281D23;
+border-top:1px solid #281D23;
+border-bottom:1px solid #281D23;
+width:5%;
+height:29%;
+top:5%;
+left:41%;
+}
+
+#basicbox {
+position:absolute;
+background-color:#000000;
+padding:1%;
+overflow:hidden;
+width:17%;
+height:21%;
+top:7%;
+left:26%;
+color:#FFFFFF;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-size:1.5vh;
+text-align:center;
+}
+
+#credits {
+position:absolute;
+opacity:0;
+background-color:#000000;
+padding:1%;
+overflow:auto;
+width:17%;
+height:21%;
+top:7%;
+left:26%;
+color:#FFFFFF;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-size:1.5vh;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#credits:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabboxholder {
+position:absolute;
+background-color:#1E1319;
+width:21.5%;
+height:29%;
+top:66%;
+left:53.5%;
 }
 
 #tabbox1 {
 position:absolute;
-width:65%;
-height:2%;
-left:17.5%;
-top:24%;
-}
-
-#content {
-position:absolute;
-padding:1%;
-overflow:auto;
-width:50%;
-height:40%;
-top:29%;
-left:24%;
-font-family:Poppins;
-font-size:70%;
-color:#666666;
+background-color:#560b0f;
+width:6.5%;
+height:3%;
+left:53.5%;
+top:66%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
 #tabbox2 {
 position:absolute;
-width:65%;
-height:2%;
-left:17.5%;
-top:74%;
+background-color:#391c25;
+width:6.5%;
+height:3%;
+left:61%;
+top:66%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
-#title2 {
+#tabbox3 {
 position:absolute;
-padding:1%;
-width:37%;
-height:7%;
-left:30%;
-top:79%;
+background-color:#1b2d3b;
+width:6.5%;
+height:3%;
+left:68.5%;
+top:66%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4 {
+position:absolute;
+background-color:#1b2d3b;
+width:6.5%;
+height:3%;
+left:53.5%;
+top:71%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox5 {
+position:absolute;
+background-color:#391c25;
+width:6.5%;
+height:3%;
+left:61%;
+top:71%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox6 {
+position:absolute;
+background-color:#560b0f;
+width:6.5%;
+height:3%;
+left:68.5%;
+top:71%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1:hover,#tabbox2:hover,#tabbox3:hover,#tabbox4:hover,#tabbox5:hover,#tabbox6:hover {
+background-color:#000000;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#smalltitle {
+position:absolute;
+background-color:#14090F;
+width:21.5%;
+height:3%;
+top:75%;
+left:53.5%;
 text-align:center;
-font-size:220%;
-font-family:Pacifico;
-color:#761315;
+color:#391c25;
+font-family: 'Crete Round', serif;
+text-transform:uppercase;
+font-size:2vh;
+letter-spacing:5px;
+line-height:1.4;
+}
+
+#smalltitlebuffer1 {
+position:absolute;
+background-color:#1E1319;
+width:1%;
+height:3%;
+left:53.5%;
+top:75%;
+}
+
+#smalltitlebuffer2 {
+position:absolute;
+background-color:#1E1319;
+width:1%;
+height:3%;
+left:74%;
+top:75%;
+}
+
+#line5 {
+position:absolute;
+background-color:#560B0F;
+width:21.5%;
+height:1%;
+top:79%;
+left:53.5%;
+}
+
+#line6 {
+position:absolute;
+background-color:#74292D;
+width:21.5%;
+height:1%;
+top:81%;
+left:53.5%;
+}
+
+#line7 {
+position:absolute;
+background-color:#394B59;
+width:21.5%;
+height:1%;
+top:83%;
+left:53.5%;
+}
+
+#line8 {
+position:absolute;
+background-color:#1B2D3B;
+width:21.5%;
+height:1%;
+top:85%;
+left:53.5%;
+}
+
+#line9 {
+position:absolute;
+background-color:#1B2D3B;
+width:21.5%;
+height:1%;
+top:88%;
+left:53.5%;
+}
+
+#line10 {
+position:absolute;
+background-color:#394B59;
+width:21.5%;
+height:1%;
+top:90%;
+left:53.5%;
+}
+
+#line11 {
+position:absolute;
+background-color:#74292D;
+width:21.5%;
+height:1%;
+top:92%;
+left:53.5%;
+}
+
+#line12 {
+position:absolute;
+background-color:#560B0F;
+width:21.5%;
+height:1%;
+top:94%;
+left:53.5%;
+}
+
+#ally1 {
+position:absolute;
+width:3.5%;
+top:79%;
+height:7%;
+left:53.5%;
+background-image: url('http://fp.chatango.com/profileimg/a/u/auror/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#ally2 {
+position:absolute;
+width:3.5%;
+top:79%;
+height:7%;
+left:59.5%;
+background-image: url('http://fp.chatango.com/profileimg/l/a/lark/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#ally3 {
+position:absolute;
+width:3.5%;
+top:79%;
+height:7%;
+left:65.5%;
+background-image: url('http://fp.chatango.com/profileimg/v/e/vectis/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#ally4 {
+position:absolute;
+width:3.5%;
+top:79%;
+height:7%;
+left:71.5%;
+background-image: url('http://fp.chatango.com/profileimg/f/e/fervor/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#ally5 {
+position:absolute;
+width:3.5%;
+top:88%;
+height:7%;
+left:53.5%;
+background-image: url('http://fp.chatango.com/profileimg/p/a/pagan/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#ally6 {
+position:absolute;
+width:3.5%;
+top:88%;
+height:7%;
+left:59.5%;
+background-image: url('http://fp.chatango.com/profileimg/c/a/castranova/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#ally7 {
+position:absolute;
+width:3.5%;
+top:88%;
+height:7%;
+left:65.5%;
+background-image: url('http://fp.chatango.com/profileimg/m/e/melodic/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#ally8 {
+position:absolute;
+width:3.5%;
+top:88%;
+height:7%;
+left:71.5%;
+background-image: url('http://fp.chatango.com/profileimg/p/r/prissy/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#ally1:hover,#ally2:hover,#ally3:hover,#ally4:hover,#ally5:hover,#ally6:hover,#ally7:hover,#ally8:hover {
+-webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+-o-transform: rotate(180deg) ;
+-ms-transform: rotate(180deg);
+transform: rotate(180deg) ;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#contentborder1 {
+position:absolute;
+border-left:1px solid #281D23;
+border-top:1px solid #281D23;
+border-bottom:1px solid #281D23;
+width:5%;
+height:60%;
+top:5%;
+left:53.5%;
+}
+
+#contentborder2 {
+position:absolute;
+border-right:1px solid #281D23;
+border-top:1px solid #281D23;
+border-bottom:1px solid #281D23;
+width:5%;
+height:60%;
+top:5%;
+left:70%;
+}
+
+#contentbox {
+position:absolute;
+background-color:#000000;
+padding:1%;
+overflow:auto;
+width:17.5%;
+height:52%;
+top:7%;
+left:54.5%;
+color:#FFFFFF;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-size:1.5vh;
+}
+
+#bottombox {
+position:absolute;
+background-color:#14090F;
+width:50%;
+height:4%;
+top:96%;
+left:25%;
+font-family: 'Teko', sans-serif;
+color:#AFAFAF;
+text-align:center;
+font-size:3vh;
+text-transform:uppercase;
+letter-spacing:5px;
 }
 
 .tabs{
 display:inline-block;
-width:30%;
-margin-left:2%;
-background-color:#ffffff;
+width:100%;
 height:100%;
-text-align:center;
-color: #761315;
-font-family:Arial;
-font-size:100%;
-letter-spacing: 3px;
+color:#AFAFAF;
+font-family: 'Ubuntu Condensed', sans-serif;
 text-transform:uppercase;
+font-size:2vh;
+line-height:1.4;
+text-align:center;
+letter-spacing:2px;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
-.tabs:hover {
-color:#ffffff;
-background-color:#000000;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
 
-#tab1,#tab2,#tab3,#tab4,#tab5,#tab6 {
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13 {
 display: none;
 }
 
-i {
-color:#761315;
-font-size:100%;
-}
-
 h1 {
-color: #ffffff;
-background-color:#000000;
-font-family:Pacifico;
-font-size:120%;
+color:#391c25;
+font-family: 'Crete Round', serif;
+background-color:#14090F;
+border-left:10px solid #1E1319;
+border-right:10px solid #1E1319;
 text-align:center;
-}
-
-b {
-color: #E42420;
-font-size: 100%;
+font-size:2vh;
 text-transform:uppercase;
 }
 
+i {
+color:#666666;
+}
+
+a {
+color:#666666;
+text-decoration:none;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+a:hover {
+color:#391c25;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+b {
+color:#391c25;
+text-transform:uppercase;
+font-family: 'Teko', sans-serif;
+font-size:2vh;
+}
 </style>
 
-<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;}</style>
-<link href="https://fonts.googleapis.com/css?family=Pacifico|Poppins" rel="stylesheet">
-<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Crete+Round|Teko|Ubuntu+Condensed" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('contentbox').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('images').innerHTML=document.getElementById(id).innerHTML}</script>
 
-<div id="box1">
-<div id="title1">
-...  Lyra  ...
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="line3"></div>
+<div id="line4"></div>
+<div id="pictab1">
+<span class="tabs" onClick="changeNavigation1 ('tab7')"></span>
+</div>
+<div id="pictab2">
+<span class="tabs" onClick="changeNavigation1 ('tab8')"></span>
+</div>
+<div id="pictab3">
+<span class="tabs" onClick="changeNavigation1 ('tab9')"></span>
+</div>
+<div id="pictab4">
+<span class="tabs" onClick="changeNavigation1 ('tab10')"></span>
+</div>
+<div id="pictab5">
+<span class="tabs" onClick="changeNavigation1 ('tab11')"></span>
+</div>
+<div id="pictab6">
+<span class="tabs" onClick="changeNavigation1 ('tab12')"></span>
+</div>
+<div id="pictab7">
+<span class="tabs" onClick="changeNavigation1 ('tab13')"></span>
+</div>
+<div id="topbox">
+- - - Lyra - - -
+</div>
+<div id="images">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/M1U7g2a.png"/>
+</div>
+<div id="basicborder1"></div>
+<div id="basicborder2"></div>
+<div id ="basicbox">
+<br>
+<b>Name:</b> <font color="#666666">──────────</font> Lyra<br>
+<b>Physical Age:</b> <font color="#666666">─</font> Late Twenties<br>
+<b>Gender:</b> <font color="#666666">────────</font> Female<br>
+<b>Race:</b> <font color="#666666">──────────</font> Gypsy<br>
+<b>Height:</b> <font color="#666666">──────────</font> 6'5"<br>
+<b>Weight:</b> <font color="#666666">────────</font> 150 lbs.
+</div>
+<div id="credits">
+<h1>Credits</h1>
+<b>Theme Creator:</b><br>
+<li><a target="_blank" href="http://fae.chatango.com">Fae</a></li>
+Completed 06/11/2018<br>
+<b>Images:</b><br>
+<li><a target="_blank" href="https://www.deviantart.com/danhowardart/art/NBF-524114070">Image One</a></li>
+<li><a target="_blank" href="http://huaban.com/pins/645045923/">Image Two</a></li>
+<li><a target="_blank" href="https://www.artstation.com/artwork/4EQ6n">Image Three</a></li>
+<li><a target="_blank" href="https://www.pinterest.ca/pin/435652963927673941/">Image Four</a></li>
+<li><a target="_blank" href="https://www.pinterest.ca/pin/515873332310892629/?lp=true">Image Five</a></li>
+<li><a target="_blank" href="https://www.pinterest.ca/pin/315955730103307904/?lp=true">Image Six</a></li>
+<li><a target="_blank" href="https://i.imgur.com/IJmH8Kq.png">Image Seven</a></li>
+<li><a target="_blank" href="https://i.imgur.com/pIEaCeh.gif">Image Eight</a></li>
+<li><a target="_blank" href="https://www.artstation.com/artwork/906eQ">Image Nine</a></li>
+<b>Music:</b><br>
+<li><a target="_blank" href="https://www.youtube.com/watch?v=M8oZSplkP0g">Mermaids by Hans Zimmer</a></li>
+<b>Cursor:</b><br>
+<li><a target="_blank" href="http://www.cursors-4u.com/">Cursors 4-U</a></li>
 </div>
 <div id="tabbox1">
 <span class="tabs" onClick="changeNavigation ('tab1')">Details</span>
-<span class="tabs" onClick="changeNavigation ('tab2')">History</span>
-<span class="tabs" onClick="changeNavigation ('tab3')">Rumors</span>
-</div>
-<div id="content">
-<h1>Basic Information</h1>
-<img align="right" style="width:40%;" src="https://i.imgur.com/1p8i1fG.png"/>
-<b>Name:</b> Lyra<br>
-<b>Physical Age:</b> Late Twenties<br>
-<b>True Age:</b> Unknown<br>
-<b>Gender:</b> Female<br>
-<b>Sexuality:</b> Demisexual<br>
-<b>Species:</b> Human<br>
-<b>Race:</b> Gypsy<br>
-<b>Rank:</b> True Practitioner<br>
-<b>Tree:</b> Bardism<br>
-<b>Occupation:</b>Teacher at Basphodius Citadel<br>
-<b>Patron Diety:</b> Symphony, the Goddess of Music<br>
-<b>Height:</b> 6'5"<br>
-<b>Weight:</b> 150 lbs.<br><br>
 </div>
 <div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab2')">History</span>
+</div>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab3')">Rumors</span>
+</div>
+<div id="tabbox4">
 <span class="tabs" onClick="changeNavigation ('tab4')">Inventory</span>
+</div>
+<div id="tabbox5">
 <span class="tabs" onClick="changeNavigation ('tab5')">Racials</span>
+</div>
+<div id="tabbox6">
 <span class="tabs" onClick="changeNavigation ('tab6')">Bardism</span>
 </div>
-<div id="title2">
-The Gypsy
+<div id="smalltitle">
+Comrades in Arms
 </div>
-</div>
-
-<div id="tab1">
+<div id="smalltitlebuffer1"></div>
+<div id="smalltitlebuffer2"></div>
+<div id="line5"></div>
+<div id="line6"></div>
+<div id="line7"></div>
+<div id="line8"></div>
+<div id="line9"></div>
+<div id="line10"></div>
+<div id="line11"></div>
+<div id="line12"></div>
+<div id="ally1"></div>
+<div id="ally2"></div>
+<div id="ally3"></div>
+<div id="ally4"></div>
+<div id="ally5"></div>
+<div id="ally6"></div>
+<div id="ally7"></div>
+<div id="ally8"></div>
+<div id="contentborder1"></div>
+<div id="contentborder2"></div>
+<div id="contentbox">
+<img style="width:100%;" src="https://i.imgur.com/pIEaCeh.gif"/>
 <h1>Appearance</h1>
-<img align="right" style="width:40%;" src="https://i.imgur.com/4OHSTEL.png"/>
 <b>Hair</b><br>
 Red, very red, but completely natural. The thick locks usually fall in a natural wave down her back, and if she lets it down without making any attempt to put it up the ends of the natural veil reach all the way to her mid-back. Bangs left long without being cut for some time, often swoop over her features, tickling her lashes and threatening to cover features. She often finds herself tucking long strands behind her ears to keep her vision clear.
 <br><br>
@@ -185,28 +810,53 @@ Smooth but not without blemish; the Gypsy's skin is scarred from years on the st
 Tall, in comparison to the average humanoid female anyway, but still fairly slim. Her body is shapely with obvious feminine curves, but is also very toned and rather small considering her height and weight. In some areas the muscle hiding under her skin is very obvious, while others are more rounded out to add to her overall female shape.
 <br><br>
 <h1>Personality</h1>
-<img align="left" style="width:40%;" src="https://i.imgur.com/vQRQOJW.png"/>
 While most often gentle and friendly, Lyra is still considered to be a strange woman. Her behaviors and mannerisms stem from an archaic dying culture that very little is truly known about, causing her speech patterns and ways of carrying herself, as well as day to day activities, to seem out of place. Everything about her feels foreign, and underneath that unsettling nervousness that comes with being around strange and unexplainable entities is the smirk of a mischevious woman. Her kindness makes it extremely hard to tell whether she is being manipulative, or just openly honest.
 </div>
+<div id="bottombox">
+The - - Gypsy
+</div>
+
+<div id="tab1">
+<img style="width:100%;" src="https://i.imgur.com/pIEaCeh.gif"/>
+<h1>Appearance</h1>
+<b>Hair</b><br>
+Red, very red, but completely natural. The thick locks usually fall in a natural wave down her back, and if she lets it down without making any attempt to put it up the ends of the natural veil reach all the way to her mid-back. Bangs left long without being cut for some time, often swoop over her features, tickling her lashes and threatening to cover features. She often finds herself tucking long strands behind her ears to keep her vision clear.
+<br><br>
+<b>Eyes</b><br>
+In stark contrast to the brightness of her red hair, Lyra's Euro-Latin eyes are a very pure and intense shade of blue. They reflect the color of her mana, and are strikingly similar to the eyes of her patron deity in every single piece of art that depicts her.
+<br><br>
+<b>Facial</b><br>
+The structure of her face is very European, and her head retains an ovular shape. Despite the sharpness of her chin, the rest of her features are more full and rounded, with slight angular emphasis on her high cheekbones and jawline. Passively, she seems to have a rather relaxed expression that appears warm--albeit distant, adding to the gentle curves and deep lines that give her a regal and almost "queenly" beauty.
+<br><br> 
+<b>Complexion</b><br>
+Smooth but not without blemish; the Gypsy's skin is scarred from years on the streets. The sun has tanned her flesh to a dark olive brown, helping to mute and tame the absurd brightness of her hair just a little.
+<br><br>
+<b>Body Type</b><br>
+Tall, in comparison to the average humanoid female anyway, but still fairly slim. Her body is shapely with obvious feminine curves, but is also very toned and rather small considering her height and weight. In some areas the muscle hiding under her skin is very obvious, while others are more rounded out to add to her overall female shape.
+<br><br>
+<h1>Personality</h1>
+While most often gentle and friendly, Lyra is still considered to be a strange woman. Her behaviors and mannerisms stem from an archaic dying culture that very little is truly known about, causing her speech patterns and ways of carrying herself, as well as day to day activities, to seem out of place. Everything about her feels foreign, and underneath that unsettling nervousness that comes with being around strange and unexplainable entities is the smirk of a mischevious woman. Her kindness makes it extremely hard to tell whether she is being manipulative, or just openly honest.
+</div>
+
 <div id="tab2">
-<i>The History of the Gypsy...</i><br>
+<img style="width:100%;" src="https://i.imgur.com/R4BNwRJ.jpg"/>
+<h1>The History of the Gypsy</h1>
 They began as nothing more than a culture, a nomadic group of humans that preferred to live off the world and travel aimlessly without end. Explorers, some called them, adventurers, others said. No matter how they were described one thing was always clear: Gypsies had insatiable wanderlust that seemed to spread through their blood. They practiced their chosen lifestyle so religiously that it became part of their very nature, and their offspring adapted accordingly. When the knowledge of magic spread across mankind, Gypsies took to it near instantly. They were able to develop skills rather quickly thanks to their cultural practices and their direct connection to a very specific deity, allowing them to learn at an accelerated rate in comparison to their fellow man.
 <br><br>
 The more they delved into the arcane arts, the more secretive they became, until they isolated themselves from the common man almost entirely. While their separation had nothing to do with prejudice, communication was never set up and they refused to share their secrets. After a very long span of time passed, just when their fellow human beings were beginning to think they were an extinct culture, they reappeared revealing the discovery of one of man's main goals! Immortality! The Gypsies were no longer base humans, but a whole new magical race, birthing children with their same affinities and capacity for eternal youth. Still refusing to share their secrets outside of their own kind, the rest of man grew increasingly jealous and hostile. Before long, their people were hunted like animals, and they were slaughtered until barely any of them remained.
 <br><br>
 Nowadays history books have forgotten why exactly Gypsies are viewed as "lesser" beings, but so much propaganda has been solidified against them over the years that it doesn't seem to matter anymore. The simple fact remains that they are hated, despite their rarity and magical skill, making them social pariahs.
 <br><br>
-<p align="center"><img style="width:80%;" src="https://i.imgur.com/pIEaCeh.gif"/></p>
-<br><br>
-<i>Lyra's Story...</i><br>
+<h1>Lyra's Story</h1>
 Most of her life was pretty typical for the average Gypsy. She was born and raised among a small group of them, known as a "Family," where all the adults acted as though all the children were their own, and the only important blood ties were the ones that connected them to each other as a race. She never truly knew which of them gave birth to her, or impregnated the woman who gave birth to her, but considering they bred like rabbits it was near impossible to tell anyway. Even they likely forgot as time passed! For a very long period of time, Lyra traveled with the Family from civilization to civilization, only staying in one city for long periods of time if they had no other choice. They were performers, who practiced magic and parlor tricks for the sake of entertainment, each individual member having their own special skill. Like a few of the Gypsies, she had a natural affinity for music, leading her to take on the practice of Bardism. Most of her magic was not focused on showmanship, however, and she ended up developing quite the sensory skills over time, drawing real attention from crowds.
 <br><br>
 Eventually her Family's journey led her to Ultimurus, where they were forced to settle for quite some time thanks to the war against the Eldritch. When the efforts against Corruption put together a strict Magic Academy (known as the Basphodius Citadel), its founders and leaders sought Lyra out, determining her abilities to be useful to them, and wishing her to train more generations to help make plenty of mages who would be able to contribute heavily to society and help mankind hang on to its world. She had to be convinced, but after some time she agreed, leaving behind her Family to embark on this new adventure alone.
 </div>
+
 <div id="tab3">
 <h1>Passing Rumors</h1>
 <p align="center">Not everything listed here may be true, and not all of it may be false. These are a few random rumors anyone who attends Basphodius Citadel could either hear or spread themselves very easily.</p>
-<br><br>
+<br>
 <li><i>“A Gypsy as a teacher? How absurd! I hear she only got that position because the Dean fancies himself pretty redheads.”</i></li>
 Gypsies are so outcast and degraded in society that seeing them in any place of power is practically impossible to believe that they got there without some form of manipulation. Lyra is a very beautiful individual externally, leading many to be drawn to the conclusion that she used her feminine charm--and body--to get a job. Given the absurdity of seeing a Gypsy Heathen as a staff member would make this subject a popular topic of discussion among those on campus.
 <br><br>
@@ -225,6 +875,7 @@ Lyra is very open about her religion. If anyone asked, stranger or friend, she w
 <li><i>“Apparently it’s really unusual for Gypsies to have such brightly colored hair. Maybe she dyes it; she could definitely afford to with that teacher’s salary. Either way you can’t deny it’s unusual, you think it has anything to do with her magic?”</i></li>
 Outcasts or not it is still not uncommon to see Gypsies in the city streets, setting up tents and preparing all kinds of magical performances in order to entertain a crowd and earn a quick enough buck to get a decent meal. They would be rare, but common enough for everyone to have seen a handful in their lifetime, and be well aware that they generally came in dark and dull hair colors--like blacks, blondes, and browns. As a Teacher, Lyra would be getting paid a hefty sum of money, and it is very likely she could use a good chunk of it to take care of her hair. She is still a woman, after all.
 </div>
+
 <div id="tab4">
 <h1>Items</h1>
 filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually 
@@ -232,22 +883,49 @@ filler text filler text filler text actual shit will be going here eventually fi
 <h1>Weapons</h1>
 filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually 
 </div>
+
 <div id="tab5">
 <h1>Gypsy Racials</h1>
-<img align="left" style="width:40%;" src="https://i.imgur.com/cZ6lSMF.png"/>
 filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually 
 <br><br>
 <h1>True Practitioner Racials</h1>
-<img align="right" style="width:40%;" src="https://i.imgur.com/EaBTzwt.png"/>
 filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually 
 </div>
+
 <div id="tab6">
 <h1>Bardism (True Practitioner)</h1>
-<img align="right" style="width:40%;" src="https://i.imgur.com/kngOmvT.png"/>
 <i>"Although music is a beautiful expression of art, the proper mage may cause it to become something much more. Bard's have the ability to convert music into powerful spells, focused primarily on buffing and (slight) healing. However, at higher levels Bardism can certainly do heavy damage, with a particular strength in sound based attacks."</i>
 <br><br>
 <h1>Spells</h1>
 filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually filler text filler text filler text actual shit will be going here eventually 
+</div>
+
+<div id="tab7">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/M1U7g2a.png"/>
+</div>
+
+<div id="tab8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/XAANmxS.jpg"/>
+</div>
+
+<div id="tab9">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/6VyZ9iS.jpg"/>
+</div>
+
+<div id="tab10">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/XG2kbZ9.png"/>
+</div>
+
+<div id="tab11">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/diZsKXW.jpg"/>
+</div>
+
+<div id="tab12">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/XFxLDsM.png"/>
+</div>
+
+<div id="tab13">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/IJmH8Kq.png"/>
 </div>
 
 <embed style="height: 0%; width: 0%;"src="Lyra.mp3" autostart="true" loop="true">
